@@ -4,3 +4,4 @@ lightning
 torchmetrics
 wandb
 optuna
+python-dotenv

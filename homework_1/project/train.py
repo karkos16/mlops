@@ -10,6 +10,11 @@ from torchvision import transforms
 from torchvision.datasets import FashionMNIST
 from torch.utils.data import DataLoader
 import optuna
+import wandb
+from dotenv import load_dotenv
+
+load_dotenv()
+wandb.login()
 
 class FashionMNISTDataModule(L.LightningDataModule):
     def __init__(self, batch_size=32):

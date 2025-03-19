@@ -10,15 +10,3 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
-
-  trainer2:
-    build: .
-    environment:
-      - WANDB_API_KEY=${WANDB_API_KEY}
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
