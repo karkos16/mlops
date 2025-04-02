@@ -1,0 +1,2 @@
+quickstart/Scripts/activate
+bentoml serve
